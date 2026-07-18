@@ -1,0 +1,272 @@
+/*********************** */
+/* 1200px (Smaller Laptops) */
+/* ********************** */
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/*********************** */
+/* 1100px (Landscape Tablets) */
+/* ********************** */
+
+@media (max-width: 68.75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/*********************** */
+/* 975px (Landscape Tablets) */
+/* ********************** */
+
+@media (max-width: 60.9375em) {
+  .nav {
+    background-color: #0d1b3d;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100dvh;
+    z-index: 9999;
+    transform: translateX(100%);
+    transition: all 0.3s ease-in;
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 4.8rem;
+  }
+
+  .open-nav .nav {
+    transform: translateX(0%);
+    visibility: visible;
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+  .open-nav .bg-overlay {
+    display: block;
+  }
+
+  .no-scroll {
+    overflow: hidden;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 3.2rem;
+  }
+
+  .nav-list-item:not(:last-child) {
+    margin: 0rem;
+  }
+
+  .nav-list-link:link,
+  .nav-list-link:visited {
+    color: #e7e8ec;
+  }
+
+  .search-form {
+    flex: 0 1 50%;
+  }
+
+  .mobile-nav-btn {
+    display: block;
+  }
+}
+
+/*********************** */
+/* 897px (Potrait Tablets) */
+/* ********************** */
+@media (max-width: 56.0625em) {
+  .heading-main {
+    font-size: 4.4rem;
+  }
+
+  .hero-text-box {
+    width: 80%;
+  }
+
+  .heading-secondary {
+    font-size: 3rem;
+  }
+
+  .statistic-number {
+    font-size: 5.2rem;
+  }
+
+  .statistic-icon {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+
+  .grid-5-cols {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 6.4rem;
+    column-gap: 4.8rem;
+  }
+  .grid-4-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .news-boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*********************** */
+/* 800px (Smaller Potrait Tablets) */
+/* ********************** */
+@media (max-width: 50em) {
+  .hero-text-box {
+    width: 100%;
+  }
+
+  .header-top {
+    font-size: 1.2rem;
+  }
+
+  .contact-top-box {
+    gap: 1.6rem;
+  }
+
+  .contact-top-social-box {
+    gap: 1rem;
+  }
+
+  .contact-top-location,
+  .contact-top-email {
+    display: none;
+  }
+
+  .grid-5-cols {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 6.4rem;
+    column-gap: 4.8rem;
+  }
+  .grid-4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .news-boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .faq-container {
+    width: 100%;
+  }
+
+  iframe {
+    width: 100%;
+    height: 30rem;
+  }
+}
+
+/*********************** */
+/* 600px (phones) */
+/* ********************** */
+@media (max-width: 50em) {
+  .hero {
+    padding: 6.4rem 3.2rem;
+  }
+
+  .btn-box {
+    gap: 3.2rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    padding: 1.2rem 2.4rem;
+    font-size: 1.4rem;
+  }
+
+  .footer-btn-cta:link,
+  .footer-btn-cta:visited {
+    padding: 1.2rem 2.4rem;
+  }
+
+  .grid-5-cols {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 6.4rem;
+    column-gap: 3.2rem;
+  }
+  .grid-4-cols {
+    grid-template-columns: 1fr;
+    row-gap: 4.8rem;
+  }
+
+  .grid-3-cols {
+    grid-template-columns: 1fr;
+  }
+  .grid-2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .news-boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .statistic-icon {
+    margin-bottom: 1.6rem;
+  }
+
+  .section-welcome {
+    padding: 8rem 0rem;
+  }
+
+  .section-programs {
+    padding: 8rem 0rem;
+  }
+
+  .statistics {
+    padding: 8rem 0rem;
+  }
+
+  .section-why-us {
+    padding: 8rem 0rem;
+  }
+
+  .section-news {
+    padding: 8rem 0rem;
+  }
+
+  .section-admission {
+    padding: 8rem 0rem;
+  }
+
+  .section-cta {
+    padding: 8rem 0rem;
+  }
+
+  .section-testimonial {
+    padding: 8rem 0rem;
+  }
+
+  .section-newsletter {
+    padding: 8rem 0rem;
+  }
+
+  .footer {
+    padding: 9.6rem 0rem 8rem;
+    background-color: #0d1b3d;
+    color: #f5f6f8;
+  }
+}

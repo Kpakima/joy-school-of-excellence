@@ -1,0 +1,98 @@
+/*********************** */
+/* Banner COMPONENTS */
+/* ********************** */
+
+.banner-container {
+  height: 60dvh;
+  background-image:
+    linear-gradient(rgba(13, 27, 61, 0.801)), url("../img/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-text-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.breadcrumbs {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  color: #f5f6f8;
+  gap: 0.5rem;
+}
+
+.seperator {
+  font-size: 2rem;
+  transform: translateY(0.5px);
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.breadcrumb-link:link,
+.breadcrumb-link:visited {
+  color: #f5f6f8;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.breadcrumb-link:hover,
+.breadcrumb-link:active {
+  opacity: 80%;
+}
+
+.active-crumb:link,
+.active-crumb:visited {
+  color: #f2b705;
+}
+
+/*********************** */
+/* Our Story COMPONENTS */
+/* ********************** */
+.section-about {
+  padding: 9.6rem 0rem;
+}
+
+.about-box {
+  align-items: center;
+}
+
+.about-img {
+  width: 100%;
+}
+
+.about-text-box {
+  line-height: 1.6;
+}
+
+.about-text:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.mission-vision {
+  padding: 9.6rem 0rem;
+}
+
+.mission-text,
+.vision-text {
+  line-height: 1.6;
+  margin-top: 1.2rem;
+}
+
+.border {
+  display: block;
+  border-bottom: 4px solid #f2b705;
+  width: 50px;
+}
